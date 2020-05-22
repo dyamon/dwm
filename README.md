@@ -1,7 +1,13 @@
-dwm - dynamic window manager
-============================
-dwm is an extremely fast, small, and dynamic window manager for X.
+# A personal fork of dwm - the suckless dynamic window manager
 
+## Patches
+
+Look at the commit history for more details on how these patches were
+applied.
+
+### Statusbar
+
++ [notitle](https://dwm.suckless.org/patches/notitle/)
 
 Requirements
 ------------
