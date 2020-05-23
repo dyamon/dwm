@@ -14,7 +14,9 @@ applied.
 + [hidevacanttags](https://dwm.suckless.org/patches/hide_vacant_tags/) -
   display only tags with at least one client;
 + [statuspadding](https://dwm.suckless.org/patches/statuspadding/) - add
-  configurable horizontal/vertical padding to statusbar.
+  configurable horizontal/vertical padding to statusbar;
++ [status2d](https://dwm.suckless.org/patches/status2d/) - allow
+  changing fg/bg color and rectangle drawing in statusbar.
 
 ### Misc
 
