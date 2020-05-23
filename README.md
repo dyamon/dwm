@@ -12,7 +12,9 @@ applied.
 + [statusallmons](https://dwm.suckless.org/patches/statusallmons/) -
   render statusbar on all monitors;
 + [hidevacanttags](https://dwm.suckless.org/patches/hide_vacant_tags/) -
-  display only tags with at least one client.
+  display only tags with at least one client;
++ [statuspadding](https://dwm.suckless.org/patches/statuspadding/) - add
+  configurable horizontal/vertical padding to statusbar.
 
 ### Misc
 
