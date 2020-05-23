@@ -9,6 +9,8 @@ applied.
 
 + [notitle](https://dwm.suckless.org/patches/notitle/) - remove window
   name area from statusbar
++ [statusallmons](https://dwm.suckless.org/patches/statusallmons/) -
+  render statusbar on all monitors
 
 ### Misc
 
