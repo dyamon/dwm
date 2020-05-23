@@ -7,7 +7,13 @@ applied.
 
 ### Statusbar
 
-+ [notitle](https://dwm.suckless.org/patches/notitle/)
++ [notitle](https://dwm.suckless.org/patches/notitle/) - remove window
+  name area from statusbar
+
+### Misc
+
++ [restartsig](https://dwm.suckless.org/patches/restartsig/) - add
+  signal handling to cleanly kill/restart dwm.
 
 Requirements
 ------------
