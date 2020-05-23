@@ -8,9 +8,11 @@ applied.
 ### Statusbar
 
 + [notitle](https://dwm.suckless.org/patches/notitle/) - remove window
-  name area from statusbar
+  name area from statusbar;
 + [statusallmons](https://dwm.suckless.org/patches/statusallmons/) -
-  render statusbar on all monitors
+  render statusbar on all monitors;
++ [hidevacanttags](https://dwm.suckless.org/patches/hide_vacant_tags/) -
+  display only tags with at least one client.
 
 ### Misc
 
