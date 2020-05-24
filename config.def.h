@@ -9,15 +9,41 @@ static const int horizpadbar        = 2;        /* horizontal padding for status
 static const int vertpadbar         = 10;        /* vertical padding for statusbar */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
+/* Gruvbox dark theme */
+static const char gruv_bg0[]		 = "#282828";
+static const char gruv_red[]		 = "#cc241d";
+static const char gruv_green[]		 = "#98971a";
+static const char gruv_yellow[]		 = "#d79921";
+static const char gruv_blue[]		 = "#458588";
+static const char gruv_purple[]		 = "#b16286";
+static const char gruv_aqua[]		 = "#689d6a";
+static const char gruv_gray[]		 = "#a89984";
+static const char gruv_gray0[]		 = "#928374";
+static const char gruv_lightred[]	 = "#fb4934";
+static const char gruv_lightgreen[]	 = "#b8bb26";
+static const char gruv_lightyellow[] = "#fabd2f";
+static const char gruv_lightblue[]	 = "#83a598";
+static const char gruv_lightpurple[] = "#d3869b";
+static const char gruv_lightaqua[]	 = "#8ec07c";
+static const char gruv_fg1[]		 = "#ebdbb2";
+/* Gruvbox additional colors */
+static const char gruv_bg0_h[]		 = "#1d2021";
+static const char gruv_bg1[]		 = "#3c3836";
+static const char gruv_bg2[]		 = "#504945";
+static const char gruv_bg3[]		 = "#665c54";
+static const char gruv_bg4[]		 = "#7c6f64";
+static const char gruv_orange[]		 = "#d65d0e";
+static const char gruv_bg0_s[]		 = "#32302f";
+static const char gruv_fg4[]	 	 = "#a89984";
+static const char gruv_fg3[]	     = "#bdae93";
+static const char gruv_fg2[] 		 = "#d5c4a1";
+static const char gruv_fg0[]         = "#fbf1c7";
+static const char gruv_lightorange[] = "#fe8019";
+
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeNorm] = { gruv_bg4, gruv_bg0, gruv_gray0 },
+	[SchemeSel]  = { gruv_fg0, gruv_bg0, gruv_blue  },
 };
 
 /* tagging */
@@ -58,7 +84,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", gruv_bg0, "-nf", gruv_fg1, "-sb", gruv_blue, "-sf", gruv_fg1, NULL };
 static const char *termcmd[]  = { "st", NULL };
 
 static Key keys[] = {
