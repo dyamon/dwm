@@ -17,6 +17,9 @@ applied.
   configurable horizontal/vertical padding to statusbar;
 + [status2d](https://dwm.suckless.org/patches/status2d/) - allow
   changing fg/bg color and rectangle drawing in statusbar.
++ [statuscmd](https://dwm.suckless.org/patches/statuscmd/) - integrates
+  with [dwmblocks](https://git.dyamon.me/dwmblocks) to provide clickable
+  areas in the statusbar through signals.
 
 ### Misc
 
