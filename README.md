@@ -36,7 +36,9 @@ applied.
   area. The master area is maintained as for the `tile` layout while the
   stack area behaves like a deck of cards;
 + [actualfullscreen](https://dwm.suckless.org/patches/actualfullscreen/) -
-  add true, pre-client, toggleble fullscreen.
+  add true, pre-client, toggleable fullscreen;
++ [sticky](https://dwm.suckless.org/patches/sticky/) - add per-client,
+  toggleable stickiness across tags.
 
 ### Misc
 
