@@ -34,7 +34,9 @@ applied.
   positions clients in a grid;
 + [deck](https://dwm.suckless.org/patches/deck/) - monocle for the stack
   area. The master area is maintained as for the `tile` layout while the
-  stack area behaves like a deck of cards.
+  stack area behaves like a deck of cards;
++ [actualfullscreen](https://dwm.suckless.org/patches/actualfullscreen/) -
+  add true, pre-client, toggleble fullscreen.
 
 ### Misc
 
