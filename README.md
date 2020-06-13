@@ -51,10 +51,12 @@ applied.
 + [center](https://dwm.suckless.org/patches/center/) - add a rule to
   center a (possibly floating) client on the screen.
 
-### Misc
+### Additional commands
 
 + [restartsig](https://dwm.suckless.org/patches/restartsig/) - add
-  signal handling to cleanly kill/restart dwm.
+  signal handling to cleanly kill/restart dwm;
++ [movestack](https://dwm.suckless.org/patches/movestack/) - add ability
+  to move selected client up/down the stack.
 
 Requirements
 ------------
