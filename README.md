@@ -29,7 +29,9 @@ applied.
 + [centeredmaster](https://dwm.suckless.org/patches/centeredmaster/) -
   layout where the master area is positioned on a central column with
   the stack area split on both sides (only the `centeredmaster` layout
-  has been patched and renamed to `centmaster`).
+  has been patched and renamed to `centmaster`);
++ [gaplessgrid](https://dwm.suckless.org/patches/gaplessgrid/) -
+  positions clients in a grid.
 
 ### Misc
 

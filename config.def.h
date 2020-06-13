@@ -74,6 +74,7 @@ static const Layout layouts[] = {
 	{ "[]=",      tile },    /* first entry is default */
     { "TTT",      btile },
     { "|M|",      centmaster },
+    { "###",      grid },
 	{ "[M]",      monocle },
 	{ "><>",      NULL },    /* no layout function means floating behavior */
 };
@@ -112,8 +113,9 @@ static Key keys[] = {
 	{ WINKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ WINKEY,                       XK_b,      setlayout,      {.v = &layouts[1]} },
 	{ WINKEY,                       XK_c,      setlayout,      {.v = &layouts[2]} },
-    { WINKEY,                       XK_z,      setlayout,      {.v = &layouts[3]} },
-    { WINKEY,                       XK_f,      setlayout,      {.v = &layouts[4]} },
+	{ WINKEY,                       XK_g,      setlayout,      {.v = &layouts[3]} },
+    { WINKEY,                       XK_z,      setlayout,      {.v = &layouts[4]} },
+    { WINKEY,                       XK_f,      setlayout,      {.v = &layouts[5]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
