@@ -46,6 +46,11 @@ applied.
   the ability to cycle through layouts instead of binding each of them
   to a specific key.
 
+### Rules
+
++ [center](https://dwm.suckless.org/patches/center/) - add a rule to
+  center a (possibly floating) client on the screen.
+
 ### Misc
 
 + [restartsig](https://dwm.suckless.org/patches/restartsig/) - add
