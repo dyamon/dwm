@@ -78,6 +78,7 @@ static const Layout layouts[] = {
     { "|M|",      centmaster },
     { "###",      grid },
 	{ "[M]",      monocle },
+    { NULL,       NULL },
 	//{ "><>",      NULL },    /* no layout function means floating behavior */
 };
 
@@ -113,11 +114,8 @@ static Key keys[] = {
 	//{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_q,      killclient,     {0} },
 	{ WINKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	{ WINKEY,                       XK_b,      setlayout,      {.v = &layouts[1]} },
-	{ WINKEY,                       XK_d,      setlayout,      {.v = &layouts[2]} },
-	{ WINKEY,                       XK_c,      setlayout,      {.v = &layouts[3]} },
-	{ WINKEY,                       XK_g,      setlayout,      {.v = &layouts[4]} },
-    { WINKEY,                       XK_z,      setlayout,      {.v = &layouts[5]} },
+    { WINKEY,                       XK_space,  cyclelayout,    {.i = +1 } },
+    { WINKEY|ShiftMask,             XK_space,  cyclelayout,    {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_x,      togglefloating, {0} },
     { MODKEY|ShiftMask,             XK_s,      togglesticky,   {0} },
     { MODKEY|ShiftMask,             XK_f,      togglefullscr,  {0} },

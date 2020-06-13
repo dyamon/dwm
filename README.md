@@ -41,7 +41,10 @@ applied.
   toggleable stickiness across tags;
 + [ru_gaps](https://dwm.suckless.org/patches/ru_gaps/) - add gaps
   between clients, modifiable at runtime. Additional patches had to be
-  applied for each additional patched layout.
+  applied for each additional patched layout;
++ [cyclelayouts](https://dwm.suckless.org/patches/cyclelayouts/) - add
+  the ability to cycle through layouts instead of binding each of them
+  to a specific key.
 
 ### Misc
 
