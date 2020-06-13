@@ -38,7 +38,10 @@ applied.
 + [actualfullscreen](https://dwm.suckless.org/patches/actualfullscreen/) -
   add true, pre-client, toggleable fullscreen;
 + [sticky](https://dwm.suckless.org/patches/sticky/) - add per-client,
-  toggleable stickiness across tags.
+  toggleable stickiness across tags;
++ [ru_gaps](https://dwm.suckless.org/patches/ru_gaps/) - add gaps
+  between clients, modifiable at runtime. Additional patches had to be
+  applied for each additional patched layout.
 
 ### Misc
 
