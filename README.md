@@ -25,7 +25,11 @@ applied.
 
 + [bottomstack](https://dwm.suckless.org/patches/bottomstack/) -
   mirrored version of the `tile` layout (only `bstack` has been
-  installed and renamed to `btile`).
+  patched and renamed to `btile`);
++ [centeredmaster](https://dwm.suckless.org/patches/centeredmaster/) -
+  layout where the master area is positioned on a central column with
+  the stack area split on both sides (only the `centeredmaster` layout
+  has been patched and renamed to `centmaster`).
 
 ### Misc
 
