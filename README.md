@@ -21,6 +21,12 @@ applied.
   with [dwmblocks](https://git.dyamon.me/dwmblocks) to provide clickable
   areas in the statusbar through signals.
 
+### Layouts
+
++ [bottomstack](https://dwm.suckless.org/patches/bottomstack/) -
+  mirrored version of the `tile` layout (only `bstack` has been
+  installed and renamed to `btile`).
+
 ### Misc
 
 + [restartsig](https://dwm.suckless.org/patches/restartsig/) - add
