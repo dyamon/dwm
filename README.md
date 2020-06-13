@@ -31,7 +31,10 @@ applied.
   the stack area split on both sides (only the `centeredmaster` layout
   has been patched and renamed to `centmaster`);
 + [gaplessgrid](https://dwm.suckless.org/patches/gaplessgrid/) -
-  positions clients in a grid.
+  positions clients in a grid;
++ [deck](https://dwm.suckless.org/patches/deck/) - monocle for the stack
+  area. The master area is maintained as for the `tile` layout while the
+  stack area behaves like a deck of cards.
 
 ### Misc
 
