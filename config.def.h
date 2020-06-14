@@ -14,7 +14,11 @@ static const char *fonts[]          = {
     "Twitter Color Emoji:size=8",
     "forkawesome:size=9"
 };
+
+static char dmenumon[2]             = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char dmenufont[]       = "monospace:size=10";
+static const char dmenuheight[]     = "22";
+static const char dmenuprompt[]     = "Run: ";
 
 /* Gruvbox dark theme */
 static const char gruv_bg0[]		 = "#282828";
@@ -98,8 +102,7 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", gruv_bg0, "-nf", gruv_fg1, "-sb", gruv_blue, "-sf", gruv_fg1, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-h", dmenuheight, "-p", dmenuprompt, "-fn", dmenufont, "-nb", gruv_bg0, "-nf", gruv_fg1, "-sb", gruv_blue, "-sf", gruv_fg1, NULL };
 static const char *termcmd[]  = { "st", NULL };
 
 static Key keys[] = {
@@ -107,18 +110,18 @@ static Key keys[] = {
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_t,      spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
-	{ MODKEY,                       XK_Tab,      focusstack,     {.i = +1 } },
+	{ MODKEY,                       XK_Tab,    focusstack,     {.i = +1 } },
 	//{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
 	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
-	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
-	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
-	{ MODKEY|ShiftMask,             XK_e,      zoom,           {0} },
+	//{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
+	//{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
+	{ WINKEY,                       XK_Return, zoom,           {0} },
     { MODKEY|ShiftMask,             XK_j,      movestack,      {.i = +1 } },
     { MODKEY|ShiftMask,             XK_k,      movestack,      {.i = -1 } },
 	//{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_q,      killclient,     {0} },
-	{ WINKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
+	{ WINKEY,                       XK_t,      setlayout,      {.v = layouts} },
     { WINKEY,                       XK_space,  cyclelayout,    {.i = +1 } },
     { WINKEY|ShiftMask,             XK_space,  cyclelayout,    {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_x,      togglefloating, {0} },
@@ -129,7 +132,7 @@ static Key keys[] = {
     { WINKEY|ShiftMask,             XK_equal,  setgaps,        {.i = +5  } },
 	//{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
-	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
+	//{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
