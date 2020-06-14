@@ -49,7 +49,12 @@ applied.
 ### Rules
 
 + [center](https://dwm.suckless.org/patches/center/) - add a rule to
-  center a (possibly floating) client on the screen.
+  center a (possibly floating) client on the screen;
++ [swallow](https://dwm.suckless.org/patches/swallow/) - allows
+  graphical interfaces to take over the window terminal who spawned
+  them. This, for example, is useful to avoid the hack of embedding
+  `sxiv` or `mpv` into the terminal window when spawning them from a
+  cli/tui interface.
 
 ### Additional commands
 
